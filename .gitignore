@@ -10,3 +10,10 @@
 text
 
 text.md
+
+*.txt
+*.doc
+*.docx
+*.pdf
+*.odt
+*.rtf
