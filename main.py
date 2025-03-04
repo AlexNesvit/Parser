@@ -103,22 +103,22 @@ nombre_lots = len(lots)
 # ✅ **Ajout des paramètres supplémentaires**
 extra_params = {
     "Durée estimative d’une dénonciation": get_text_multiple([  
-        "div.elementor-element:nth-child(11) > div:nth-child(1)", # Selecteur principal
         "div.elementor-element:nth-child(12) > div:nth-child(1)",  # Selecteur alternatif
+        "div.elementor-element:nth-child(11) > div:nth-child(1)", # Selecteur principal
     ]),
     # "Durée estimative d’une dénonciation": get_text("div.elementor-element:nth-child(12) > div:nth-child(1)"),
 "Durée estimative d’une option": get_text_multiple([
-    "div.elementor-element:nth-child(13) > div:nth-child(1)", # Selecteur principal
     "div.elementor-element:nth-child(14) > div:nth-child(1)",  # Selecteur alternatif
+    "div.elementor-element:nth-child(13) > div:nth-child(1)", # Selecteur principal
 ]),
     "Possibilité de prolonger une option": get_text_multiple([
-    "div.elementor-element:nth-child(15) > div:nth-child(1)",  # Selecteur principal 
     "div.elementor-element:nth-child(16) > div:nth-child(1)",  # Selecteur alternatif
+    "div.elementor-element:nth-child(15) > div:nth-child(1)",  # Selecteur principal 
 ]),
-    "Montant du dépôt de garantie": get_text(
-        # "div.elementor-element:nth-child(18) > div:nth-child(1)",
+    "Montant du dépôt de garantie": get_text_multiple([
+        "div.elementor-element:nth-child(18) > div:nth-child(1)",
         "div.elementor-element:nth-child(17) > div:nth-child(1)"
-),
+]),
     # "Délai estimatif paiement honoraires": get_text("div.elementor-element:nth-child(24) > div:nth-child(1)")
     "Délai estimatif paiement honoraires": get_text_multiple([  
         "div.elementor-element:nth-child(24) > div:nth-child(1)",  # Selecteur principal
